@@ -8,7 +8,7 @@ from keras.preprocessing import image
 model = tf.keras.models.load_model('trainml.h5')
 model.compile(
     optimizer='adam',
-    loss='binary_crossentropy',
+    loss='categorical_crossentropy',
     metrics=['accuracy']
 )
 
